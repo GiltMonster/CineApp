@@ -1,0 +1,29 @@
+.details-container {
+  max-width: 1100px;
+  margin: 40px auto;
+}
+.details-back-btn {
+  width: 120px;
+  margin-bottom: 24px;
+}
+.details-content {
+  display: flex;
+  gap: 32px;
+  flex-wrap: wrap;
+}
+.details-poster {
+  max-width: 300px;
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.details-info {
+  flex: 1;
+  min-width: 250px;
+}
+.details-title {
+  margin-bottom: 16px;
+}
+.details-synopsis {
+  margin: 16px 0;
+}

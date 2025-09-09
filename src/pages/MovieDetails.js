@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { useParams, useNavigate } from 'react-router-dom';
 import { getMovieDetails } from '../services/tmdb';
-import '../styles/Home/index.css';
+import '../styles/MovieDetails/index.css';
 
 const MovieDetails = () => {
   const { id } = useParams();
@@ -30,22 +30,21 @@ const MovieDetails = () => {
   if (!movie) return null;
 
   return (
-    <div className="home-container">
-      <button className="login-btn" style={{ width: 120, marginBottom: 24 }} onClick={() => navigate(-1)}>
+    <div className="details-container">
+      <button className="login-btn details-back-btn" onClick={() => navigate(-1)}>
         Voltar
       </button>
-      <div style={{ display: 'flex', gap: 32, flexWrap: 'wrap' }}>
+      <div className="details-content">
         <img
           src={movie.poster_path ? `https://image.tmdb.org/t/p/w400${movie.poster_path}` : ''}
           alt={movie.title}
-          className="home-movie-poster"
-          style={{ maxWidth: 300 }}
+          className="details-poster"
         />
-        <div style={{ flex: 1, minWidth: 250 }}>
-          <h2 className="home-title">{movie.title}</h2>
+        <div className="details-info">
+          <h2 className="details-title">{movie.title}</h2>
           <div><b>Ano:</b> {movie.release_date?.slice(0, 4)}</div>
           <div><b>Gêneros:</b> {movie.genres?.map(g => g.name).join(', ')}</div>
-          <div style={{ margin: '16px 0' }}><b>Sinopse:</b><br />{movie.overview || 'Sem sinopse.'}</div>
+          <div className="details-synopsis"><b>Sinopse:</b><br />{movie.overview || 'Sem sinopse.'}</div>
           <div><b>Avaliação:</b> {movie.vote_average} / 10</div>
         </div>
       </div>
