@@ -65,6 +65,7 @@ const Login = () => {
         </button>
       </form>
       <button className="login-btn login-btn-google" onClick={handleGoogleLogin} disabled={loading}>
+        <img src="/utils/svgs/google-original.svg" alt="Google" style={{ width: 20, height: 20, marginRight: 10, verticalAlign: 'middle' }} />
         Entrar com Google
       </button>
       {error && <div className="login-error">{error}</div>}

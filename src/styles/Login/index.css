@@ -69,6 +69,36 @@
   width: 100%;
   display: block;
 }
+
+.login-btn-google {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
+  background: #fff;
+  color: #222;
+  border: 1.5px solid #e0e0e0;
+  box-shadow: 0 2px 8px 0 #0001;
+  font-weight: 600;
+  margin-top: 8px;
+  margin-bottom: 8px;
+  transition: background 0.2s, box-shadow 0.2s, color 0.2s;
+}
+.login-btn-google img {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+}
+.login-btn-google:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.login-btn-google:hover:not(:disabled),
+.login-btn-google:focus-visible:not(:disabled) {
+  background: #f7f7f7;
+  color: #111;
+  box-shadow: 0 4px 18px 0 #0002;
+}
 .login-btn:disabled {
   opacity: 0.7;
   cursor: not-allowed;
