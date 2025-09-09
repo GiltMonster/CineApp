@@ -68,13 +68,13 @@ const Home = () => {
           placeholder="Buscar filme por nome..."
           value={search}
           onChange={e => setSearch(e.target.value)}
-          className="login-input"
+          className="search-input"
         />
-        <button className="login-btn" type="submit" disabled={searching || !search.trim()}>
+        <button className="search-btn" type="submit" disabled={searching || !search.trim()}>
           Buscar
         </button>
         {search && (
-          <button type="button" className="login-btn" style={{ background: '#888' }} onClick={handleClear}>
+          <button type="button" className="search-btn" style={{ background: '#888' }} onClick={handleClear}>
             Limpar
           </button>
         )}

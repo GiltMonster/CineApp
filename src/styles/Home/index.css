@@ -19,12 +19,13 @@
   border-radius: 12px;
   padding: 16px 20px;
   box-shadow: 0 2px 12px 0 rgba(0,0,0,0.08);
-  align-items: center;
+
 }
 
 .home-search-form input[type="text"] {
   flex: 1;
-  padding: 14px 18px;
+  width: 100%;
+  padding: 14px 20px;
   border: none;
   border-radius: 8px;
   background: var(--background, #181820);
@@ -39,7 +40,7 @@
   opacity: 1;
 }
 
-.home-search-form .login-btn {
+.home-search-form .search-btn {
   min-width: 120px;
   padding: 14px 0;
   border-radius: 8px;
@@ -51,17 +52,18 @@
   background: linear-gradient(90deg, var(--secondary-purple) 60%, var(--secondary-purple-dark) 100%);
   color: #fff;
 }
-.home-search-form .login-btn:active {
+.home-search-form .search-btn:active {
   transform: scale(0.97);
 }
-.home-search-form .login-btn[disabled] {
+.home-search-form .search-btn[disabled] {
   opacity: 0.6;
   cursor: not-allowed;
 }
 .home-movies-list {
   display: flex;
   flex-wrap: wrap;
-  gap: 24px;
+  justify-content: center;
+  gap: 25px;
 }
 .home-movie-card {
   width: 180px;
