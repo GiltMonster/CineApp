@@ -1,0 +1,43 @@
+
+.home-container {
+  max-width: 1100px;
+  margin: 40px auto;
+}
+.home-title {
+  margin-bottom: 24px;
+}
+.home-search-form {
+  display: flex;
+  gap: 8px;
+  margin-bottom: 24px;
+}
+.home-movies-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.home-movie-card {
+  width: 180px;
+  text-align: center;
+}
+.home-movie-poster {
+  width: 100%;
+  border-radius: 8px;
+  margin-bottom: 8px;
+}
+.home-movie-title {
+  font-weight: bold;
+  margin-bottom: 4px;
+}
+.home-movie-year {
+  font-size: 14px;
+  color: #888;
+}
+.home-loading,
+.home-error {
+  text-align: center;
+  margin-top: 40px;
+}
+.home-error {
+  color: red;
+}
