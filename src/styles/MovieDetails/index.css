@@ -1,6 +1,10 @@
 .details-container {
   max-width: 1100px;
   margin: 40px auto;
+  background: var(--background-secondary, #23262f);
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 #0002;
+  padding: 32px 24px;
 }
 .details-back-btn {
   width: 120px;
@@ -20,10 +24,32 @@
 .details-info {
   flex: 1;
   min-width: 250px;
+  color: var(--text, #f3f3f3);
 }
 .details-title {
   margin-bottom: 16px;
+  color: var(--text, #f3f3f3);
+  font-size: 2rem;
+  font-weight: 700;
 }
 .details-synopsis {
   margin: 16px 0;
+  color: var(--text, #f3f3f3);
+  font-size: 1.08rem;
+  line-height: 1.6;
+}
+
+.details-info b {
+  color: var(--text, #f3f3f3);
+  font-weight: 600;
+}
+
+@media (prefers-color-scheme: light) {
+  .details-container {
+    background: var(--background-secondary, #fff);
+    box-shadow: 0 4px 24px 0 #0001;
+  }
+  .details-title, .details-info, .details-synopsis, .details-info b {
+    color: var(--text, #181a20);
+  }
 }

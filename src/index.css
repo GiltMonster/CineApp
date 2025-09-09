@@ -1,5 +1,164 @@
+/* Tema padrão: dark */
+body {
+  background: #181a20;
+  color: #f3f3f3;
+  font-family: 'Inter', Arial, Helvetica, sans-serif;
+  transition: background 0.3s, color 0.3s;
+}
+
+input, button, textarea, select {
+  font-family: inherit;
+}
+
+/* Tema claro via prefers-color-scheme */
+@media (prefers-color-scheme: light) {
+  body {
+    background: #f7f7f7;
+    color: #181a20;
+  }
+}
+
+/* Ajustes para containers principais */
+.home-container, .details-container, .login-container {
+  background: #23262f;
+  border-radius: 16px;
+  box-shadow: 0 4px 24px 0 #0002;
+  padding: 32px 24px;
+}
+@media (prefers-color-scheme: light) {
+  .home-container, .details-container, .login-container {
+    background: #fff;
+    box-shadow: 0 4px 24px 0 #0001;
+  }
+}
+
+/* Ajustes para títulos */
+.home-title, .details-title, .login-container h2 {
+  font-size: 2rem;
+  font-weight: 700;
+  margin-bottom: 24px;
+}
+
+/* Inputs e botões modernos */
+.login-input {
+  background: #23262f;
+  color: #f3f3f3;
+  border: 1.5px solid #353945;
+  border-radius: 8px;
+  padding: 12px;
+  margin-bottom: 16px;
+  font-size: 1rem;
+  transition: border 0.2s, background 0.2s;
+}
+.login-input:focus {
+  border-color: var(--secondary-purple);
+  background: #232b3a;
+  outline: none;
+}
+@media (prefers-color-scheme: light) {
+  .login-input {
+    background: #f7f7f7;
+    color: #181a20;
+    border: 1.5px solid #d3d3d3;
+  }
+  .login-input:focus {
+    background: #fff;
+  }
+}
+
+.login-btn {
+  background: linear-gradient(90deg, var(--secondary-purple) 60%, var(--secondary-purple-dark) 100%);
+  color: #fff;
+  border: none;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-weight: 600;
+  font-size: 1rem;
+  cursor: pointer;
+  margin-bottom: 8px;
+  transition: background 0.2s, box-shadow 0.2s;
+  box-shadow: 0 2px 8px 0 #8f5cff30;
+}
+.login-btn:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+.login-btn:hover:not(:disabled) {
+  background: linear-gradient(90deg, var(--secondary-purple-dark) 60%, var(--secondary-purple) 100%);
+}
+
+/* Cards de filmes */
+.home-movie-card {
+  background: #23262f;
+  border-radius: 12px;
+  box-shadow: 0 2px 12px 0 #0002;
+  padding: 16px 8px 12px 8px;
+  transition: transform 0.15s, box-shadow 0.15s;
+}
+.home-movie-card:hover {
+  transform: translateY(-4px) scale(1.03);
+  box-shadow: 0 6px 24px 0 #8f5cff80;
+}
+@media (prefers-color-scheme: light) {
+  .home-movie-card {
+    background: #fff;
+    box-shadow: 0 2px 12px 0 #0001;
+  }
+}
+
+.home-movie-title {
+  font-size: 1.1rem;
+  font-weight: 600;
+}
+.home-movie-year {
+  color: #aaa;
+  font-size: 0.95rem;
+}
+@media (prefers-color-scheme: light) {
+  .home-movie-year {
+    color: #666;
+  }
+}
+
+/* Header moderno */
+.header-container {
+  width: 100%;
+  background: #181a20;
+  color: #fff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 18px 40px;
+  box-sizing: border-box;
+  border-bottom: 1.5px solid #23262f;
+  margin-bottom: 32px;
+}
+.header-title {
+  font-size: 1.7rem;
+  font-weight: bold;
+  cursor: pointer;
+  letter-spacing: 1px;
+}
+
+@media (prefers-color-scheme: light) {
+  .header-container {
+    background: #fff;
+    color: #181a20;
+    border-bottom: 1.5px solid #e0e0e0;
+  }
+}
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap');
 
+:root {
+  --primary-blue: #1976d2;
+  --secondary-purple: #8f5cff;
+  --secondary-purple-dark: #6c3fd1;
+  --danger: #d32f2f;
+}
+
 body {
+  background: #181a20;
+  color: #f3f3f3;
   font-family: 'Inter', Arial, Helvetica, sans-serif;
+  transition: background 0.3s, color 0.3s;
 }
