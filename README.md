@@ -1,14 +1,22 @@
 
 # CineApp
 
+## 🌐 Sobre o deploy
+
+Deploy é o processo de publicar sua aplicação para que qualquer pessoa possa acessá-la pela internet. Ao clicar no badge acima, você acessa a versão online do CineApp hospedada na Vercel, sem precisar instalar nada localmente.
+
+[![CineApp - Vercel](https://img.shields.io/badge/Deploy-Vercel-000?logo=vercel&logoColor=white)](https://cine-app-murex.vercel.app/)
+
+## Sobre o projeto
+
 CineApp é um catálogo de filmes moderno feito em React, com autenticação via Firebase e consumo da API do TMDb. O projeto possui tema escuro/claro, login social (Google), busca de filmes e detalhes completos.
 
 ## 🚀 Instalação
 
 1. **Clone o repositório:**
 	```bash
-	git clone <url-do-repo>
-	cd cine-app
+	git clone https://github.com/GiltMonster/CineApp
+	cd CineApp
 	```
 2. **Instale as dependências:**
 	```bash
