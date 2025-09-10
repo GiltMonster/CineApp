@@ -3,9 +3,9 @@
 
 ## 🌐 Sobre o deploy
 
-Deploy é o processo de publicar sua aplicação para que qualquer pessoa possa acessá-la pela internet. Ao clicar no badge acima, você acessa a versão online do CineApp hospedada na Vercel, sem precisar instalar nada localmente.
-
 [![CineApp - Vercel](https://img.shields.io/badge/Deploy-Vercel-000?logo=vercel&logoColor=white)](https://cine-app-murex.vercel.app/)
+
+Deploy é o processo de publicar uma aplicação para que qualquer pessoa possa acessá-la pela internet. Ao clicar no badge acima, você acessa a versão online do CineApp hospedada na Vercel, sem precisar instalar nada localmente, mas caso queira...
 
 ## Sobre o projeto
 
